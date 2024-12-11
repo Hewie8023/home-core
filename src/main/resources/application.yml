@@ -2,6 +2,9 @@ minio:
   endpoint: http://192.168.3.20:9000
   accessKey: hewie
   secretKey: rxw8023sjy
+#  endpoint: http://192.168.3.26:9000
+#  accessKey: minio
+#  secretKey: minio8023
   bucketName: home
 
 spring:
@@ -10,8 +13,10 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.3.20:3306/home?characterEncoding=utf-8&useSSL=false&useUnicode=true
+#    url: jdbc:mysql://192.168.3.26:3306/home?characterEncoding=utf-8&useSSL=false&useUnicode=true
     username: root
     password: 123456
+#    password: rxw8023sjy
 
   servlet:
     multipart:
@@ -30,7 +35,8 @@ mybatis-plus:
 
 web:
 #  file-path: /Users/hewie/IdeaProjects/home/music
-  file-path: /home/hewie/
+#  file-path: /home/hewie/
+  file-path: /home/pi
 
 openweathermap:
   appid: 16098740af13a75d7e418b23b2e434da

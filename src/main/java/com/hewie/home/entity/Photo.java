@@ -27,6 +27,8 @@ public class Photo implements Serializable {
 
     private String mainColor;
 
+    private String typeId;
+
 
     @Override
     public String toString() {
